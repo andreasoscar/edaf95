@@ -1,3 +1,5 @@
-sumsq n = sum $ zipWith (*) [1..n] [1..n]
+sumsqrec 0 = 0
+sumsqrec n = n*n + sumsqrec (n-1)
 
-main = print (sumsq 5)
+sumsqmap n = map (\x -> x*x) [x | x <- [1..5]]
+main = print (sumsqrec 5)
