@@ -6,3 +6,4 @@ duplicates (x:xs)
     | otherwise = (duplicates xs)
 
 main = print (duplicates [1,2,3,2])
+

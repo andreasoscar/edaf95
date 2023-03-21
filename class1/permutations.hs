@@ -4,7 +4,7 @@ remove1 x (y:ys)
     | otherwise = y: (remove1 x ys)
 
 isPermutation :: Eq a => [a] -> [a] -> Bool
-isPermutation [] [] = True 
+isPermutation [] [] = Truea 
 isPermutation [] _ = False 
 isPermutation _ [] = False
 
